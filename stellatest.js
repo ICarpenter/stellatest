@@ -9,7 +9,7 @@ animateContents = function(e) {
 	//if contents are not open, open contents (animate)
 	if(!$(header).hasClass('open')){
 		$(header).addClass('open').animate({
-			backgroundColor: "rgba(242,101,34, .5)"
+			backgroundColor: "rgba(95,197,193, .5)"
 		}, 'fast', function(){
 			//when contents are open, fade in child elements
 			$(this).children('span').html('-');
@@ -24,7 +24,7 @@ animateContents = function(e) {
 			//then animate the .contents div
 			$(this).parent('.contents').slideUp('fast', function(){
 				$(header).animate({
-					backgroundColor: "rgba(0,0,0, 0.3)"
+					backgroundColor: "rgba(0,0,0, 0.1)"
 				}, 'fast');
 			});
 		});

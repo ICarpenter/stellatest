@@ -1,6 +1,9 @@
 body {
 	font-family: 'Roboto Condensed', sans-serif;
 }
+p, a, h1, h2, h3, h4, li, span, div {
+	-webkit-font-smoothing: subpixel-antialiased;
+}
 
 	.accordion {
 		border-right: 1px solid rgba(0,0,0,0.8);
@@ -12,7 +15,8 @@ body {
 	.header {
 		border-bottom: 1px solid rgba(0,0,0,0.8);
 		text-transform: uppercase;
-		box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+		box-shadow: inset 0 0 10px rgba(0,0,0,0.1);
+		background: rgba(0,0,0, 0.1);
 		cursor: pointer;
 	}
 		.header span {
