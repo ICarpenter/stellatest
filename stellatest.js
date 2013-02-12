@@ -11,8 +11,9 @@ animateContents = function(e) {
 		$(header).addClass('open').animate({
 			backgroundColor: "rgba(95,197,193, .5)"
 		}, 'fast', function(){
-			//when contents are open, fade in child elements
+			//change "+" icon to "-"
 			$(this).children('span').html('-');
+			//when contents are open, fade in child elements
 			$(this).next('.contents').slideDown('fast', function(){
 				$(this).children().fadeTo('fast', 1);
 			});
@@ -28,6 +29,7 @@ animateContents = function(e) {
 				}, 'fast');
 			});
 		});
+		//change "-" icon to "+"
 		$(header).children('span').html('+');
 	}
 }
